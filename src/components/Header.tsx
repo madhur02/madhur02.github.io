@@ -25,7 +25,7 @@ const Header = () => {
           </div>
           <div className="flex items-center space-x-1">
             <MapPin className="h-3 w-3" />
-            <span>Mumbai, Maharashtra, India</span>
+            <span>Gwalior, Madhya Pradesh, India</span>
           </div>
         </div>
       </div>

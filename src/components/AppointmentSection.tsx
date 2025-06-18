@@ -149,7 +149,7 @@ const AppointmentSection = () => {
                       <div>
                         <h4 className="font-semibold text-mining-800 mb-2">Office</h4>
                         <p className="text-gray-600">
-                          Mumbai, Maharashtra, India<br />
+                          Gwalior, Madhya Pradesh, India<br />
                           Business Hours: Mon-Fri 9:00 AM - 6:00 PM
                         </p>
                       </div>
