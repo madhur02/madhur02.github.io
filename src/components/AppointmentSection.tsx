@@ -39,10 +39,59 @@ const AppointmentSection = () => {
     }
 
     // Simulate form submission
-    toast({
-      title: "Appointment Requested!",
-      description: "We'll contact you within 24 hours to confirm your appointment.",
-    });
+    const handleSubmit = async (e: React.FormEvent) => {
+      e.preventDefault();
+    
+      // Basic validation
+      if (!formData.name || !formData.email || !formData.phone || !formData.service) {
+        toast({
+          title: "Missing Information",
+          description: "Please fill in all required fields.",
+          variant: "destructive",
+        });
+        return;
+      }
+    
+      try {
+        const response = await fetch('/api/send-appointment-email', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(formData),
+        });
+    
+        if (response.ok) {
+          toast({
+            title: "Appointment Requested!",
+            description: "Details sent successfully. We'll get back to you shortly.",
+          });
+        } else {
+          toast({
+            title: "Error",
+            description: "Failed to send your details. Please try again later.",
+            variant: "destructive",
+          });
+        }
+      } catch (error) {
+        toast({
+          title: "Network Error",
+          description: "Unable to send request. Please check your connection.",
+          variant: "destructive",
+        });
+      }
+    
+      // Reset form
+      setFormData({
+        name: '',
+        email: '',
+        phone: '',
+        company: '',
+        service: '',
+        date: '',
+        time: '',
+        message: ''
+      });
+    };
+    
 
     // Reset form
     setFormData({
