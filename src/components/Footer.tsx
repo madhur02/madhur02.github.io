@@ -80,15 +80,15 @@ const Footer = () => {
               <div className="flex items-start space-x-3">
                 <MapPin className="h-5 w-5 text-mining-400 mt-1 flex-shrink-0" />
                 <div>
-                  <p className="text-gray-300">Gwalior, Madhya Pradesh</p>
+                  <p className="text-gray-300">Indore, Madhya Pradesh</p>
                   <p className="text-gray-300">India</p>
                 </div>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="h-5 w-5 text-mining-400 flex-shrink-0" />
                 <div>
-                  <p className="text-gray-300">+91 98765 43210</p>
-                  <p className="text-gray-300">+91 98765 43211</p>
+                  <p className="text-gray-300">+91 94250 66662</p>
+                  <p className="text-gray-300">+91 81200 19345</p>
                 </div>
               </div>
               <div className="flex items-center space-x-3">

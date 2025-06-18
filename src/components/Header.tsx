@@ -16,7 +16,7 @@ const Header = () => {
           <div className="flex items-center space-x-4">
             <div className="flex items-center space-x-1">
               <Phone className="h-3 w-3" />
-              <span>+91 98765 43210</span>
+              <span>+91 94250 66662</span>
             </div>
             <div className="flex items-center space-x-1">
               <Mail className="h-3 w-3" />
@@ -25,7 +25,7 @@ const Header = () => {
           </div>
           <div className="flex items-center space-x-1">
             <MapPin className="h-3 w-3" />
-            <span>Gwalior, Madhya Pradesh, India</span>
+            <span>Indore, Madhya Pradesh, India</span>
           </div>
         </div>
       </div>

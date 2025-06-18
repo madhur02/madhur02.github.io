@@ -31,8 +31,10 @@ const AboutSection = () => {
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
             Established in 2001, Global Mines and Minerals has been a leading Manufacturer and Service Provider in the mining industry, 
             consistently delivering excellence for over two decades. 
+            
             The company operates under the name Suryavansham Mining, envisioned by Mr. Manish Nayak (Ex-IAS officer) and Mrs. Sangeeta Nayak, 
-            whose leadership and vision continue to drive our commitment to quality, innovation, and sustainable growth in the mining sector.
+            whose leadership and vision continue to drive our commitment to quality, innovation, and sustainable growth in the mining sector. 
+            
             </p>
           </div>
 
